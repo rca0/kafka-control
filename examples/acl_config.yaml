@@ -1,0 +1,43 @@
+roles:
+  create-topics:
+  - name: topic1
+    type: TOPIC
+    pattern: LITERAL
+    host: "*"
+    operation: CREATE
+    permission: ALLOW
+  describe-topics:
+  - name: topictest1
+    type: TOPIC
+    pattern: LITERAL
+    host: "*"
+    operation: DESCRIBE
+    permission: ALLOW
+  delete-topics:
+  - name: topictestdelete1
+    type: TOPIC
+    pattern: LITERAL
+    host: "*"
+    operation: DELETE
+    permission: ALLOW
+  alter-cluster:
+  - name: kafka-cluster
+    type: CLUSTER
+    pattern: LITERAL
+    host: "*"
+    operation: ALTER
+    permission: ALLOW
+
+users:
+  rca0:
+    principal: User:rca0
+    roles:
+    - create-topics
+    - alter-cluster
+    - delete-topics
+
+  client:
+    principal: User:client
+    roles:
+    - create-topics
+    - describe-topics

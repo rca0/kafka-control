@@ -1,0 +1,16 @@
+topics:
+  topic1:
+    partitions: 6
+    replicas: 3
+    config:
+      retention.ms: 720000
+
+  topic2:
+    partitions: 3
+    replicas: 2
+
+  topic3:
+    partitions: 2
+    replicas: 3
+    config:
+      min.insync.replicas: 3

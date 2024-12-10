@@ -1,0 +1,12 @@
+bootstrap.server: rca0.domain.com:9093,rca1.domain.com:9093
+ssl:
+  enabled: true
+  ca_file: /userhome/rca0/ca.crt
+  cert_file: /userhome/rca0/tls.crt
+  key_file: /userhome/rca0/tls.key
+  # key_password: <type-here>
+sasl:
+  enabled: true
+  username: admin
+  password: super-secret
+  mechanism: PLAIN
