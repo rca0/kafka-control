@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/rca0/kaf-cfg/acls"
-	"github.com/rca0/kaf-cfg/config"
-	"github.com/rca0/kaf-cfg/topics"
+	"github.com/rca0/kafka-control/acls"
+	"github.com/rca0/kafka-control/config"
+	"github.com/rca0/kafka-control/topics"
 	"gopkg.in/yaml.v2"
 )
 

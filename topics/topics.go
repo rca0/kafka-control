@@ -7,7 +7,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/rca0/kaf-cfg/config"
+	"github.com/rca0/kafka-control/config"
 	"github.com/segmentio/kafka-go"
 )
 

@@ -27,8 +27,8 @@ COPY acls/ acls/
 COPY topics/ topics/ 
 COPY config/ config/ 
 
-RUN go build -a -o kaf-cfg main.go 
-RUN useradd -u 1001 kaf-cfg 
-USER kaf-cfg  
+RUN go build -a -o kafctl main.go 
+RUN useradd -u 1001 kafctl 
+USER kafctl
 
-CMD ["/go/kaf-cfg"]
+CMD ["/go/kafctl"]

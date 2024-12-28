@@ -1,4 +1,4 @@
-module github.com/rca0/kaf-cfg
+module github.com/rca0/kafka-control
 
 go 1.22.1
 
