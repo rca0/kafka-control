@@ -1,4 +1,4 @@
-# kaf-cfg
+# kafka-control
 
 CLI-tool to manage Kafka ACLs and Topics.
 
